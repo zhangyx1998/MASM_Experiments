@@ -14,7 +14,7 @@ MacOS Terminal:
 MOUNT C E:\DosENV
 C:\
 cd HOME
-SET PATH=Z:\;C:\bin
+SET PATH=Z:\;C:\bin;C:\bin\vim;C:\bin\util
 CLS
 ======================
 Notice:
