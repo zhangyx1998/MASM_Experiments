@@ -1,0 +1,25 @@
+These steps helps you setup dosBox for MASM development on Windows or MacOS
+
++========================================================+
+| Use the following command to open and edit config.txt: |
++========================================================+
+Windows CMD.EXE:
+> "C:\Program Files (x86)\DOSBox-0.74-3\DOSBox.exe" -editconf notepad.exe -editconf "code"
+MacOS Terminal:
+> ~/Library/Preferences/DOSBox 0.74-3 Preferences
+
++====================+
+| Add to [autoexec]: |
++====================+
+MOUNT C E:\DosENV
+C:\
+cd HOME
+SET PATH=Z:\;C:\bin
+CLS
+======================
+Notice:
+  You should replace E:\DosENV with your local DosENV folder loaction.
+
++=========================+
+| And you are good to go! |
++=========================+
