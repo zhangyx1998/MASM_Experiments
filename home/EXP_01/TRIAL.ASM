@@ -19,10 +19,12 @@ APPR1:
     REPNE SCASB
     JMP NEXT
 APPR2:
-    DEC CX
+    CMP CX,0
     JZ NEXT
     INC DI
+    CMP [],[]
     JNE APPR2
+    DEC CX
 NEXT:
     MOV AX, 0FFFFH
     SUB AX, CX
