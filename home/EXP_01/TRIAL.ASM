@@ -20,11 +20,13 @@ APPR1:
     JMP NEXT
 APPR2:
     CMP CX,0
-    JZ NEXT
+    JZ  NEXT
+L1:
     INC DI
-    CMP [],[]
-    JNE APPR2
+    CMP AL, DS:[DI]
+    JNE L1
     DEC CX
+    JNZ L1
 NEXT:
     MOV AX, 0FFFFH
     SUB AX, CX
